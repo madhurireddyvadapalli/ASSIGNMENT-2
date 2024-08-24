@@ -1,0 +1,8 @@
+import string
+
+def count_special_characters(statement):
+    special_characters = string.punctuation + ' '
+    count = sum(1 for char in statement if char in special_characters)
+    return count
+statement = "Modi Birthday @ September 17, #&$% is the wishes code for him."
+print("Number of special Characters:", count_special_characters(statement))
