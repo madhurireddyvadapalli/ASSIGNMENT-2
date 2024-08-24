@@ -1,0 +1,13 @@
+from collections import Counter
+S = "ghee"
+freq = Counter(S)
+
+def shift_char(c, dist):
+    
+    new_pos = (ord(c) - ord('a') + dist) % 26
+    return chr(ord('a') + new_pos)
+
+modified_string = ''.join(shift_char(c, freq[c]) for c in S)
+
+# Output
+print(modified_string)
