@@ -1,0 +1,13 @@
+def find_char_index(s, char):
+    for index, c in enumerate(s):
+        if c == char:
+            return index
+    return -1
+string = input("Enter the string: ")
+char_to_search = input("Enter the character to be searched: ")
+index = find_char_index(string, char_to_search)
+
+if index != -1:
+    print(f"{char_to_search} is found in string at index: {index}")
+else:
+    print(f"{char_to_search} is not found in the string.")
