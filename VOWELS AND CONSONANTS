@@ -1,0 +1,5 @@
+s = "Saveetha School of Engineering"
+v = sum(c in 'aeiouAEIOU' for c in s)
+c = sum(c.isalpha() and c not in 'aeiouAEIOU' for c in s)
+print(f"Number of vowels = {v} Number of Consonants = {c}")
+print("Vowels are more than consonants." if v > c else "Consonants are more than vowels." if c > v else "Vowels and consonants are equal.")
