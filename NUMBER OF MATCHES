@@ -1,0 +1,4 @@
+S1 = "what"
+S2 = "watch"
+matches = sum(1 for a, b in zip(S1, S2) if a == b)
+print(matches)
