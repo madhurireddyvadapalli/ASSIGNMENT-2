@@ -1,0 +1,12 @@
+def sort_word(word):
+    
+    word = ''.join(filter(str.isalpha, word.upper()))
+    sorted_word = ''.join(sorted(word))
+    reverse_sorted_word = ''.join(sorted(word, reverse=True))
+    return sorted_word, reverse_sorted_word
+word = input("Enter the word: ")
+
+normal_order, reverse_order = sort_word(word)
+
+print(f"Alphabetical Order Normal: {' '.join(normal_order)}")
+print(f"Alphabetical Order Reverse: {' '.join(reverse_order)}")
